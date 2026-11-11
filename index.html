@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio académico de Investigación de Operaciones.">
+    <title>Investigación de Operaciones | Portafolio académico</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor barra">
+            <a class="marca" href="#inicio">
+                <span class="marca-icono">IO</span>
+                <span>INVESTIGACIÓN <small>DE OPERACIONES</small></span>
+            </a>
+            <button class="menu-boton" id="botonMenu" aria-label="Mostrar menú" aria-expanded="false">☰</button>
+            <nav class="navegacion" id="navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#proyecto">Proyecto</a>
+                <a href="#fases">Fases</a>
+                <a href="#biblioteca">Biblioteca</a>
+                <a href="#autor">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="principal" id="inicio">
+            <div class="contenedor principal-contenido">
+                <div class="principal-texto">
+                    <span class="etiqueta-superior"><span class="punto"></span> BLOG DE INVESTIGACION DE OPERACIONES· 2026</span>
+                    <h1>Aprende a optimizar  <span> los recursos de la empresa.</span></h1>
+                    <p class="principal-descripcion">
+                        Este es un blog donde encontraras todos los recursos para entender los temas de 
+                        investigacion de operaciones vistos a lo largo del semestre, en el blog encontraras los
+                        videos explicativos de cada tema y toda la teoria clasificada en articulos..
+                    </p>
+                    <div class="principal-botones">
+                        <a class="boton boton-primario" href="#fases">Ver las fases <span>→</span></a>
+                        <a class="boton boton-secundario" href="#biblioteca">Ver materiales</a>
+                    </div>
+                    <div class="principal-datos">
+                        <div><strong>03</strong><span>Fases del proyecto</span></div>
+                        <div><strong id="totalMateriales">00</strong><span>Materiales publicados</span></div>
+                        <div><strong>01</strong><span>Blog de Investigación</span></div>
+                    </div>
+                </div>
+                <div class="principal-visual" aria-hidden="true">
+                    <div class="visual-encabezado"><span>ANÁLISIS Y OPTIMIZACIÓN</span><span class="visual-estado">● ENFOQUE ACADÉMICO</span></div>
+                    <div class="visual-centro">
+                        <span class="visual-subtitulo">DEL PROBLEMA A LA SOLUCIÓN</span>
+                        <div class="diagrama">
+                            <div class="nodo nodo-a">A</div>
+                            <div class="nodo nodo-b">B</div>
+                            <div class="nodo nodo-c">C</div>
+                            <div class="nodo nodo-d">D</div>
+                            <svg viewBox="0 0 350 240" preserveAspectRatio="none">
+                                <path d="M65 70 L280 70 L280 180 L65 180 Z M65 70 L280 180 M65 180 L280 70" fill="none" stroke="#a6b8c9" stroke-width="2" stroke-dasharray="6 7"/>
+                                <path d="M65 70 L280 70 L280 180" fill="none" stroke="#35b99a" stroke-width="5" stroke-linecap="round"/>
+                            </svg>
+                            <span class="costo costo-uno">4</span><span class="costo costo-dos">3</span><span class="costo costo-tres">7</span>
+                        </div>
+                        <div class="visual-resultado"><span>OBJETIVO</span><strong>Encontrar la mejor solución</strong></div>
+                    </div>
+                    <div class="visual-pie"><span>01 / IDENTIFICAR</span><span>02 / ANALIZAR</span><span>03 / OPTIMIZAR</span></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="seccion seccion-fases" id="fases">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <div><span class="seccion-etiqueta">02 / FASES DEL PROYECTO</span><h2>Contenido de las fases</h2></div>
+                    <p>aquí estan los documentos y las explicaciones de cada etapa.</p>
+                </div>
+                <div class="tarjetas-fases">
+                    <article class="tarjeta-fase">
+                        <div class="tarjeta-arriba"><span>FASE 01</span><span>↗</span></div>
+                        <div class="fase-ilustracion">01<span>◇</span></div>
+                        <h3>Contenido del Modulo 01</h3>
+                        <p>Temas: Formulación de Modelos, Programación Lineal, Método Gráfico, Método Simplex.</p>
+                        <label class="selector-etiqueta" for="temaFase1">Selecciona una exposición</label>
+                        <select class="selector-tema" id="temaFase1" aria-label="Tema de la fase 1">
+                            <option value="">Elegir tema...</option>
+                        </select>
+                        <button class="enlace-fase" data-fase="1">Ver materiales de la fase →</button>
+                    </article>
+                    <article class="tarjeta-fase">
+                        <div class="tarjeta-arriba"><span>FASE 02</span><span>↗</span></div>
+                        <div class="fase-ilustracion">02<span>▦</span></div>
+                        <h3>Contenido Modulo 02</h3>
+                        <p>Temas: Dualidad y Análisis de Sensibilidad, Modelo de Transporte, Modelo de Asignación.</p>
+                        <label class="selector-etiqueta" for="temaFase2">Selecciona una exposición</label>
+                        <select class="selector-tema" id="temaFase2" aria-label="Tema de la fase 2">
+                            <option value="">Elegir tema...</option>
+                        </select>
+                        <button class="enlace-fase" data-fase="2">Ver materiales de la fase →</button>
+                    </article>
+                    <article class="tarjeta-fase">
+                        <div class="tarjeta-arriba"><span>FASE 03</span><span>↗</span></div>
+                        <div class="fase-ilustracion">03<span>↗</span></div>
+                        <h3>Contenido Modulo 03</h3>
+                        <p>Temas: Teoría de Redes (PERT/CPM), Teoría de Inventarios (Modelos Determinísticos).</p>
+                        <label class="selector-etiqueta" for="temaFase3">Selecciona una exposición</label>
+                        <select class="selector-tema" id="temaFase3" aria-label="Tema de la fase 3">
+                            <option value="">Elegir tema...</option>
+                        </select>
+                        <button class="enlace-fase" data-fase="3">Ver materiales de la fase →</button>
+                    </article>
+                </div>
+
+
+                <section class="panel-reproductor" id="panelReproductor" aria-label="Reproductor de exposiciones">
+                    <div class="panel-cabecera">
+                        <div>
+                            <span class="seccion-etiqueta">REPRODUCCIÓN DE EXPOSICIONES</span>
+                            <h3 id="tituloVideo">Selecciona un tema de las tarjetas</h3>
+                            <p id="detalleVideo">Elige una exposición de la Fase 1, 2 o 3 para verla aquí.</p>
+                        </div>
+                        <a id="enlaceVideo" class="enlace-original" href="#fases" target="_blank" rel="noopener noreferrer" hidden>Abrir video original ↗</a>
+                    </div>
+                    <div class="pantalla-video" id="pantallaVideo">
+                        <div class="pantalla-vacia"><span>▶</span><p>Tu video aparecerá aquí</p></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <section class="seccion seccion-biblioteca" id="biblioteca">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <div><span class="seccion-etiqueta">03 / RECURSOS</span><h2>Biblioteca académica</h2></div>
+                    <p>Videos, artículos, presentaciones y archivos de Excel.</p>
+                </div>
+                <div class="filtros">
+                    <label>Fase
+                        <select id="filtroFase">
+                            <option value="todas">Todas las fases</option>
+                            <option value="1">Fase 1</option>
+                            <option value="2">Fase 2</option>
+                            <option value="3">Fase 3</option>
+                        </select>
+                    </label>
+                    <label>Tipo de archivo
+                        <select id="filtroTipo">
+                            <option value="todos">Todos los materiales</option>
+                            <option value="video">Videos</option>
+                            <option value="pdf">PDF</option>
+                            <option value="presentacion">Presentaciones</option>
+                            <option value="excel">Excel</option>
+                            <option value="otro">Otros</option>
+                        </select>
+                    </label>
+                    <label class="busqueda">Buscar
+                        <input id="buscar" type="search" placeholder="Buscar por nombre o tema...">
+                    </label>
+                </div>
+                <p class="contador" id="contadorResultados"></p>
+                <div class="materiales" id="listaMateriales"></div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-autor" id="autor">
+            <div class="contenedor autor-grid">
+                <div><span class="seccion-etiqueta">04 / SOBRE EL AUTOR</span><h2>Un espacio para compartir lo que aprendimos en el curso.</h2></div>
+                <div>
+                    <p>Portafolio desarrollado para el curso de Investigación de Operaciones.</p>
+                    <div class="datos-autor"><span>ESTUDIANTE</span><strong id="nombreEstudiante">Marvin Jafet Gudiel Lopez</strong></div>
+                    <div class="datos-autor"><span>UNIVERSIDAD</span><strong id="nombreUniversidad">Mariano Galvez de Guatemala</strong></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pie">
+        <div class="contenedor pie-contenido">
+            <div><strong>PORTAFOLIO ACADÉMICO</strong><p>Investigación de Operaciones · Proyecto universitario</p></div>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+
+    <script src="js/contenido.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
